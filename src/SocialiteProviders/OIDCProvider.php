@@ -35,7 +35,7 @@ class OIDCProvider extends AbstractProvider
      */
     protected function getAuthUrl($state): string
     {
-        return $this->buildAuthUrlFromBase($this->buildUrl(env('OIDC_BASE') . '/authorize'), $state);
+        return $this->buildAuthUrlFromBase($this->buildUrl('/authorize'), $state);
     }
 
     /**
@@ -45,7 +45,7 @@ class OIDCProvider extends AbstractProvider
      */
     protected function getTokenUrl(): string
     {
-        return $this->buildUrl(env('OIDC_BASE') . '/token');
+        return $this->buildUrl('/token');
     }
 
     /**
@@ -58,7 +58,7 @@ class OIDCProvider extends AbstractProvider
      */
     protected function getUserByToken($token): array
     {
-        $uri = $this->buildUrl(env('OIDC_BASE') .'/userinfo');
+        $uri = $this->buildUrl('/userinfo');
 
         $response = $this->getHttpClient()->get($uri, [
             'headers' => [
