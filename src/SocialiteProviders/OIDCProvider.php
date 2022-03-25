@@ -14,7 +14,10 @@ class OIDCProvider extends AbstractProvider
      * @var array
      */
     protected $scopes = [
-        'identity',
+        'openid', 
+        'profile',
+        'email',
+        'offline_access',
     ];
 
     /**
