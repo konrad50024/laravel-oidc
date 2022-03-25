@@ -1,6 +1,6 @@
 <?php
 
-namespace oidc\laraveloidc\SocialiteProviders;
+namespace oidcsociolite\laraveloidc\SocialiteProviders;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Laravel\Socialite\Two\AbstractProvider;

@@ -1,11 +1,11 @@
 <?php
 
-namespace oidc\laraveloidc;
+namespace oidcsociolite\laraveloidc;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Socialite\Contracts\Factory;
-use oidc\laraveloidc\SocialiteProviders\OIDCProvider;
+use oidcsociolite\laraveloidc\SocialiteProviders\OIDCProvider;
 
 class OIDCServiceProvider extends ServiceProvider
 {

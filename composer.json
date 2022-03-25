@@ -1,5 +1,5 @@
 {
-    "name": "oidc/laraveloidc",
+    "name": "oidcsociolite/laraveloidc",
     "description": "Laravel wrapper around the OIDC Provider.",
     "keywords": ["oidc", "laravel", "auth"],
     
@@ -24,18 +24,18 @@
     },
     "autoload": {
         "psr-4": {
-            "oidc\\laraveloidc\\": "src"
+            "oidcsociolite\\laraveloidc\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "oidc\\laraveloidc\\Tests\\": "tests"
+            "oidcsociolite\\laraveloidc\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "oidc\\laraveloidc\\OIDCServiceProvider"
+                "oidcsociolite\\laraveloidc\\OIDCServiceProvider"
             ]
         }
     },
