@@ -75,9 +75,15 @@ class OIDCProvider extends AbstractProvider
      * @param  array  $user
      * @return User
      */
-    protected function mapUserToObject(array $user)
+    protected function mapUserToObject(array $user): User
     {
-        dd($user);
+        return (new User)->setRaw($user)->map([
+            'id'       => $user['sub'],
+            'nickname' => $user['nickname'] ?? null,
+            'name'     => $user['name'] ?? null,
+            'email'    => $user['email'] ?? null,
+            'avatar'   => $user['picture'] ?? null,
+        ]);
     }
 
     /**
