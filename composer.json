@@ -1,0 +1,52 @@
+{
+    "name": "oidc/laraveloidc",
+    "description": "Laravel wrapper around the OIDC Provider.",
+    "keywords": ["oidc", "laravel", "auth"],
+    
+    "license": "MIT",
+    
+    "authors": [
+        {
+            "name": "Konrad",
+            "email": "konrad50024@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "fakerphp/faker": "^1.9",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "laravel/socialite": "^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.3",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "oidc\\laraveloidc\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "oidc\\laraveloidc\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "oidc\\laraveloidc\\OIDCServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-format": "vendor/bin/phpcs src --standard=PSR12",
+        "format": "vendor/bin/phpcbf src --standard=PSR12"
+    }
+}
