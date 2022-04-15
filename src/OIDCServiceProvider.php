@@ -49,7 +49,7 @@ class OIDCServiceProvider extends ServiceProvider
     }
 
     /**
-     * Configure the Truckspace Socialite provider.
+     * Configure the OIDC Socialite provider.
      *
      * @return void
      *
