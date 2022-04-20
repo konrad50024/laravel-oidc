@@ -7,8 +7,8 @@ return [
     | Base URL
     |--------------------------------------------------------------------------
     |
-    | The base url used for making requests. Please change this in the env.
-    | 
+    | The base url used for making requests. Please change this url in the env
+    | your website.
     |
     */
 
